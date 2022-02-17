@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5454/minientrepriseit
+    username: root
+    password: password
+  flyway:
+    url: jdbc:postgresql://localhost:5454/minientrepriseit
+    schemas: public
+    user: root
+    password: password
+    locations: classpath:db/migration, classpath:db/data
+
+server:
+  port: 8008
+
