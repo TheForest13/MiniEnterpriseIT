@@ -1,0 +1,2 @@
+INSERT INTO public.task(id, title, "description", date_created, date_completion, "uid")
+values (1, 'создать для Лизы REST API', 'Реализовать функционал', '2021-02-18 23:28:00.000', '2021-02-20 12:00:00.000', '12345678901234567890123456789012');

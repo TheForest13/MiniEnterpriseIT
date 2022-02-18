@@ -1,11 +1,14 @@
 CREATE TABLE EMPLOYEE
 (
-    id   integer NOT NULL,
-    first_name varchar,
-    last_name varchar,
-    position varchar,
+    id          INTEGER NOT NULL,
+    first_name  VARCHAR,
+    last_name   VARCHAR,
+    position    VARCHAR,
+    current_emp BOOLEAN,
+    task        VARCHAR,
     PRIMARY KEY (id)
 );
+
 CREATE SEQUENCE public.EMPLOYEE_S;
 ALTER SEQUENCE public.EMPLOYEE_S RESTART WITH 2
 
