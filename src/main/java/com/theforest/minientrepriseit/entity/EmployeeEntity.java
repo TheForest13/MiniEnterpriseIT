@@ -1,4 +1,4 @@
-package com.theforest.minientrepriseit.model;
+package com.theforest.minientrepriseit.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -28,4 +28,7 @@ public class EmployeeEntity {
 
     @Column(name = "position")
     private String position;
+
+    @Column(name = "current_emp")
+    private Boolean currentEmp;
 }

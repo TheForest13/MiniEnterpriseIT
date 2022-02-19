@@ -1,6 +1,7 @@
 CREATE TABLE TASK
 (
     id          INTEGER NOT NULL,
+    employee_id INTEGER,
     title  VARCHAR,
     "description"   VARCHAR,
     date_created    DATE,

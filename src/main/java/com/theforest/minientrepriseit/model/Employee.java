@@ -1,4 +1,4 @@
-package com.theforest.minientrepriseit.dto;
+package com.theforest.minientrepriseit.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,8 +9,9 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class EmployeeDto {
+public class Employee {
     private String firstName;
     private String lastName;
     private String position;
+    private Boolean currentEmp;
 }

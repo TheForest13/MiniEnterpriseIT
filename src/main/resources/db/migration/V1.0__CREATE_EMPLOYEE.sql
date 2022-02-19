@@ -5,7 +5,6 @@ CREATE TABLE EMPLOYEE
     last_name   VARCHAR,
     position    VARCHAR,
     current_emp BOOLEAN,
-    task        VARCHAR,
     PRIMARY KEY (id)
 );
 
