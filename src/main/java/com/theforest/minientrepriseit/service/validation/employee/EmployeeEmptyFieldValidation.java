@@ -27,7 +27,7 @@ public class EmployeeEmptyFieldValidation implements EmployeeValidation {
                         Optional.ofNullable(build(employee.getFirstName(), fieldErrorMessage, FIRST_NAME)),
                         Optional.ofNullable(build(employee.getLastName(), fieldErrorMessage, LAST_NAME)),
                         Optional.ofNullable(build(employee.getPosition(), fieldErrorMessage, POSITION)),
-                        Optional.ofNullable(build(employee.getCurrentEmp(), fieldErrorMessage, CURRENT_EMP)) //todo тут баг валидации по обязательному полю (надо просто убрать эту строчку)
+                        Optional.ofNullable(build(employee.getCurrentEmp(), fieldErrorMessage, CURRENT_EMP))
                 )
                 .filter(Optional::isPresent)
                 .map(Optional::get)

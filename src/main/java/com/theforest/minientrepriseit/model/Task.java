@@ -1,4 +1,4 @@
-package com.theforest.minientrepriseit.model.result;
+package com.theforest.minientrepriseit.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -7,9 +7,14 @@ import lombok.NoArgsConstructor;
 
 @Data
 @Builder
-@AllArgsConstructor
 @NoArgsConstructor
-public class Result {
-    private String status;
+@AllArgsConstructor
+public class Task {
+    private String title;
+
     private String description;
+
+    private String dateCompletion;
+
+    private String uid;
 }

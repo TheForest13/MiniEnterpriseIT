@@ -13,8 +13,8 @@ import java.util.List;
 public class EmployeeValidationError extends Result {
     private List<String> errors;
 
-    public EmployeeValidationError(String status, List<String> errors) {
-        super(status);
+    public EmployeeValidationError(String status, String description, List<String> errors) {
+        super(status, description);
         this.errors = errors;
     }
 }

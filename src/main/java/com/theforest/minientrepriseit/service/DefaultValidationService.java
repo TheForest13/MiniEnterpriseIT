@@ -34,6 +34,7 @@ public class DefaultValidationService implements ValidationService {
     }
 
     private EmployeeValidationError build(List<String> errors) {
-        return errors.isEmpty() ? null : new EmployeeValidationError(FAILED, errors);
+        String description = messageService.getMessage("description.field.error");
+        return errors.isEmpty() ? null : new EmployeeValidationError(FAILED, description, errors);
     }
 }
