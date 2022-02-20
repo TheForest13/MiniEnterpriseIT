@@ -15,6 +15,4 @@ public class Task {
     private String description;
 
     private String dateCompletion;
-
-    private String uid;
 }

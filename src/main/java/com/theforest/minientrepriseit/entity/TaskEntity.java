@@ -3,8 +3,9 @@ package com.theforest.minientrepriseit.entity;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.Date;
 
-@Getter
+@Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
@@ -27,10 +28,10 @@ public class TaskEntity {
     private String description;
 
     @Column(name = "date_created")
-    private String dateCreated;
+    private Date dateCreated;
 
     @Column(name = "date_completion")
-    private String dateCompletion;
+    private Date dateCompletion;
 
     @Column(name = "uid")
     private String uid;
